@@ -4,11 +4,11 @@
     "description": "A simple CRUD API using Node.js and Express",
     "main": "index.js",
     "scripts": {
-        "start": "node dist/index.js",
         "start:dev": "nodemon --exec ts-node src/server.ts",
-        "start:prod": "tsc && node dist/index.js",
+        "start:prod": "tsc && node dist/index.ts",
         "test": "jest",
-        "start:multi": "node cluster.js"
+        "start:multi": "nodemon src/cluster.ts",
+        "build": "tsc"
     },
     "author": "Oksana Bondareva",
     "license": "ISC",

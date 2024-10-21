@@ -7,7 +7,7 @@ userRouter.get("/", (request: Request, response: Response) => {
   getUsers(request, response);
 });
 
-userRouter.get("/:id", (request: Request, response: Response) => {
+userRouter.get("/:userId", (request: Request, response: Response) => {
   getUserById(request, response);
 });
 
@@ -15,11 +15,11 @@ userRouter.post("/", (request: Request, response: Response) => {
   createUser(request, response);
 });
 
-userRouter.put("/:id", (request: Request, response: Response) => {
+userRouter.put("/:userId", (request: Request, response: Response) => {
   updateUser(request, response);
 });
 
-userRouter.delete("/:id", (request: Request, response: Response) => {
+userRouter.delete("/:userId", (request: Request, response: Response) => {
   deleteUser(request, response);
 });
 
